@@ -17,5 +17,11 @@
         },
         "editor.suggest.insertMode": "replace",
         "editor.bracketPairColorization.enabled": true
+    },
+    "typescript.preferences.importModuleSpecifier": "project-relative",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#102E50",
+        "titleBar.activeBackground": "#174170",
+        "titleBar.activeForeground": "#F7FAFD"
     }
 }

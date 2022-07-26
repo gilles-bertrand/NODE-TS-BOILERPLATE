@@ -1,4 +1,4 @@
 const message = () => {
-  console.log('hello world');
+  console.log('hello world and me');
 };
 export default message;

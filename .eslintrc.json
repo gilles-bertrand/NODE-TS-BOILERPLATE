@@ -4,6 +4,7 @@
         "es2021": true,
         "jest/globals": true
     },
+    "root":true,
     "extends": [
         "standard"
     ],
@@ -18,25 +19,22 @@
         "jest"
     ],
     "rules": {
-        "semi": [
-            2,
-            "always"
-        ],
-        "no-console": "warn",
+        "semi": "off",
+        "no-console": "error",
         "no-return-assign": "off",
+        "no-use-before-define":"off", 
+        "no-useless-constructor":"off", 
+        "@typescript-eslint/no-use-before-define": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
         "unused-imports/no-unused-imports": "error",
-        "comma-dangle": [
-            "error",
-            "always-multiline"
-        ],
         "unused-imports/no-unused-vars": [
-            "warn",
-            {
-                "vars": "all",
-                "varsIgnorePattern": "^",
-                "args": "after-used",
-                "argsIgnorePattern": "^"
-            }
+          "warn",
+          {
+            "vars": "all",
+            "varsIgnorePattern": "^_",
+            "args": "after-used",
+            "argsIgnorePattern": "^_"
+          }
         ],
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/no-explicit-any": "warn",
